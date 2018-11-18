@@ -1,0 +1,41 @@
+NECESSARY NOTES FOR EACH NODE THAT BEING USED IN THIS API
+---------------------------------------------------------
+
+///////express
+This API has been written using Express framework. If you need information about it:
+https://expressjs.com/
+
+///////morgan
+A middleware that logs HTTP requests to console.
+
+///////body-parser
+Self explanatory.
+
+///////Nodemon
+Nodemon watches every JS file in the project and restarts the server whenever a js file edited and saved (or just saved).
+So that the developer can focus on coding, instead of stopping and restarting server each time they edit a single line of code.
+Keeping the server console nearby is recommended, so that if there is an error, it becomes easier to see.
+
+There is a limit for allowed watches on a single Ubuntu user.
+Nodemon is a node that watches the changes on files you write code and restarts the server.
+By doing that, it exceeds that watch limit.
+Remember, Nodemon has to watch every single file if they are edited or not.
+That's why you need to increase the allowed watch limit.
+
+The shell command for that job;
+sudo sysctl fs.inotify.max_user_watches=982222 && sudo sysctl -p
+
+If you don't need Nodemon anymore, edit, "package.json", it's in the main folder.
+Find the line,
+"start": "nodemon server.js"
+Change it to,
+"start": "npm server.js"
+
+-----------------------------------------------------------------------
+//AUTHOR NOTES
+If the devs that worked on any API that you are trying to work with is not with Luteg anymore,
+...and you need help...
+
+For MongoDB API, Reach: osmankirpat@gmail.com
+
+(Devs are not required to give their personal contact info here, nor they have to answer your mails. This is just a courtesy.)
