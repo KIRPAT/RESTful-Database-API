@@ -1,7 +1,7 @@
 # RESTful-Database-API (v0.1)
 
 **What is this?**
-An API for doing CRUD operations on databases with HTTP requests, a.k.a. *RESTful Database API*. It is initially designed for MongoDB, and not yet complete. I'm stil working on it. When the v1.0 is released, it means the MongoDB part is finished. If I can find the time, I will be working on v2.0 for mySQL/mariaDB capability.
+An API for doing CRUD operations on databases with HTTP requests, hence the name: *RESTful Database API*. It is (initially) designed for MongoDB, and not yet complete. When the v1.0 is released, it means that the MongoDB part is finished. The next verison, v2.0 will focuss on mySQL/mariaDB.
 
 **What is this API made of?**
 * NodeJS, as the environment. 
